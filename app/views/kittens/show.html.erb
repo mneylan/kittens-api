@@ -1,0 +1,12 @@
+<div class="kitten-container">
+  <p> This is <%= @kitten.name %> </p>
+
+  <p> It is <%= @kitten.age %> years old</p>
+
+  <p>It is <%= @kitten.softness %> and <%= @kitten.cuteness %></p>
+
+  <li><%= link_to "Edit", edit_kitten_path(@kitten) %></li>
+  <li><%= link_to "Destroy", kitten_path(@kitten), method: :delete,
+          data: { confirm: "Are you sure?" } %></li>
+  <li><%= link_to "Home", kittens_path %></li>
+</div>

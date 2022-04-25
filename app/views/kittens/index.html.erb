@@ -1,0 +1,18 @@
+<div class="kittens-container">
+  <h1>Kittens</h1>
+
+  <% @kittens.each do |kitten| %>
+    <li>
+      <%= link_to kitten.name, kitten %>
+      <%= "-- #{kitten.age} years old. With softness like #{kitten.softness} and cuteness like #{kitten.cuteness}" %>
+      <%= link_to "Destroy", kitten_path(kitten), method: :delete,
+          data: { confirm: "Are you sure?" } %>
+    </li>
+
+  <% end %>
+
+  <div class="link-new">
+    <%= link_to "New Kitten", new_kitten_path %>
+  </div>
+
+<div>

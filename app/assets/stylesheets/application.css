@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ .link-new {
+   margin-top: 15px;
+ }
+
+ #flash-success {
+   width: fit-content;
+   padding: 0 5px;
+   font-size: 25px;
+   color: green;
+   border: solid 2px black;
+   
+ }
+ 
+ #flash-error {
+  width: fit-content;
+  font-size: 25px;
+  padding: 0 5px;
+  color: red;
+  border: solid 2px black
+ }
